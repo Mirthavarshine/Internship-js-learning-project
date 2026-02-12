@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Registration</title>
+    <link rel="stylesheet" href="userRegister.css" />
+  </head>
+
+  <body>
+    <h2>User Registration Form</h2>
+
+    <form id="userForm">
+      <!-- First Name -->
+      <label>First Name:</label><br />
+      <input type="text" id="firstName" name="firstName" />
+      <br /><br />
+
+      <!-- Last Name -->
+      <label>Last Name:</label><br />
+      <input type="text" id="lastName" name="lastName" />
+      <br /><br />
+
+      <!-- Email -->
+      <label>Email:</label><br />
+      <input type="text" id="email" name="email" />
+      <br /><br />
+
+      <!-- Age -->
+      <label>Age:</label><br />
+      <input type="number" id="age" name="age" />
+      <br /><br />
+
+      <!-- Subjects -->
+      <label>Select Subjects (Choose at least 3):</label><br />
+
+      <input type="checkbox" name="subject" value="Physics" /> Physics<br />
+      <input type="checkbox" name="subject" value="Chemistry" /> Chemistry<br />
+      <input type="checkbox" name="subject" value="Biology" /> Biology<br />
+      <input type="checkbox" name="subject" value="Tamil" /> Tamil<br />
+      <input type="checkbox" name="subject" value="French" /> French<br />
+      <br />
+      <!-- Gender -->
+      <label>Gender:</label><br />
+
+      <label>
+        <input type="radio" name="gender" value="Male" />
+        Male
+      </label><br/>
+
+      <label>
+        <input type="radio" name="gender" value="Female" />
+        Female
+      </label> 
+      <br/>
+      <br/>
+
+
+      <!-- Description -->
+      <label>Description (Optional):</label><br />
+      <textarea id="description" name="description"></textarea>
+      <br /><br />
+
+      <!-- Submit Button -->
+      <button type="submit">Submit</button>
+    </form>
+    <script src="userValidation.js"></script>
+  </body>
+</html>
